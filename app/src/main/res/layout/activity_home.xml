@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.example.tailoredtech.smartparking.activities.HomeActivity">
 
-    <include layout="@layout/app_toolbar"/>
+    <include layout="@layout/app_toolbar" />
 
     <FrameLayout
         android:id="@+id/container"

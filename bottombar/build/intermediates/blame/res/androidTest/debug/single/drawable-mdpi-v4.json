@@ -108,16 +108,21 @@
         "source": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "D:\\Smart-Parking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
-        "source": "D:\\Smart-Parking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "D:\\Smart-Parking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "D:\\Smart-Parking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png",
         "source": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png"
+=======
+        "merged": "D:\\Smart-Parking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "D:\\Smart-Parking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Smart-Parking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "D:\\Smart-Parking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+>>>>>>> d3b3e6885744e5cda05f93da6fccbac506074ab2
     },
     {
         "merged": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
