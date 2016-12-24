@@ -9,39 +9,6 @@
 
     <include layout="@layout/app_toolbar" />
 
-    <LinearLayout
-        android:id="@+id/scrollid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:paddingBottom="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="8dp">
-
-        <EditText
-            android:id="@+id/search_field"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginTop="3dp"
-            android:background="@drawable/serach_border"
-            android:drawableRight="@mipmap/ic_content_search"
-            android:focusableInTouchMode="false"
-            android:gravity="center_vertical|start"
-            android:hint="Search"
-            android:imeOptions="actionSearch"
-            android:inputType="text"
-            android:paddingLeft="5dp"
-            android:textColorHint="@color/search_grey" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:background="@drawable/shadow" />
-
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
