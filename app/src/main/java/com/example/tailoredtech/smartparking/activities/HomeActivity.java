@@ -30,9 +30,8 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-        setBottomBar(savedInstanceState);
         fragmentManager = getSupportFragmentManager();
+        setBottomBar(savedInstanceState);
     }
 
     private void setBottomBar(Bundle savedInstanceState) {
@@ -61,7 +60,6 @@ public class HomeActivity extends AppCompatActivity {
     private void onBottomMenuClick(int menuItemId) {
         Fragment fragment = getFragmentFromPosition(menuItemId);
         attachFragment(fragment);
-        Toast.makeText(this,"on menu clicked: "+menuItemId,Toast.LENGTH_SHORT).show();
     }
 
     private void attachFragment(Fragment fragment) {
