@@ -18,7 +18,8 @@
         <activity android:name=".activities.HomeActivity" />
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.LoginActivity" />
-        <activity android:name=".activities.MobileLoginActivity"></activity>
+        <activity android:name=".activities.MobileLoginActivity" />
+        <activity android:name=".activities.PostSlotActivity"></activity>
     </application>
 
 </manifest>

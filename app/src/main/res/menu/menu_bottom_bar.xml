@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/bottom_menu_click"
+        android:id="@+id/bottom_menu_discover"
         android:icon="@drawable/selector_menu_click"
-        android:title="Book Slot" />
+        android:title="Discover" />
     <item
-        android:id="@+id/bottom_menu_mirror"
+        android:id="@+id/bottom_menu_fav"
         android:icon="@drawable/selector_menu_click"
-        android:title="Broadcast Slot" />
+        android:title="Favourites" />
     <item
         android:id="@+id/bottom_menu_profile"
         android:icon="@drawable/selector_menu_click"

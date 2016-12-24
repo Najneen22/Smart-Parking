@@ -8,14 +8,14 @@ import android.view.ViewGroup;
 
 import com.example.tailoredtech.smartparking.R;
 
-public class BookSlotFragment extends Fragment {
+public class DiscoverFragment extends Fragment {
 
-    public BookSlotFragment() {
+    public DiscoverFragment() {
         // Required empty public constructor
     }
 
-    public static BookSlotFragment newInstance(String param1, String param2) {
-        BookSlotFragment fragment = new BookSlotFragment();
+    public static DiscoverFragment newInstance(String param1, String param2) {
+        DiscoverFragment fragment = new DiscoverFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
