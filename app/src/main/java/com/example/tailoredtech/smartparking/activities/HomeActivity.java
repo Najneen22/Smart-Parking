@@ -1,7 +1,9 @@
-package com.example.tailoredtech.smartparking;
+package com.example.tailoredtech.smartparking.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.tailoredtech.smartparking.R;
 
 public class HomeActivity extends AppCompatActivity {
 
