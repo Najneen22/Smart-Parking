@@ -19,8 +19,9 @@
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.MobileLoginActivity" />
+        <activity android:name=".activities.PostSlotActivity"/>
         <activity android:name=".activities.SelectBookingArea" />
-        <activity android:name=".activities.PaymentActivity"></activity>
+        <activity android:name=".activities.PaymentActivity"/>
     </application>
 
 </manifest>

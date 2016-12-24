@@ -13,17 +13,15 @@ import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.activities.SelectBookingArea;
 import com.example.tailoredtech.smartparking.adapter.BookingAdapter;
 
-public class BookSlotFragment extends Fragment {
+public class DiscoverFragment extends Fragment {
+
+    public DiscoverFragment() {}
 
     private RecyclerView parkingListView;
     private BookingAdapter bookingAdapter;
 
-    public BookSlotFragment() {
-        // Required empty public constructor
-    }
-
-    public static BookSlotFragment newInstance(String param1, String param2) {
-        BookSlotFragment fragment = new BookSlotFragment();
+    public static DiscoverFragment newInstance(String param1, String param2) {
+        DiscoverFragment fragment = new DiscoverFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -57,6 +55,4 @@ public class BookSlotFragment extends Fragment {
         });
         return view;
     }
-
-
 }

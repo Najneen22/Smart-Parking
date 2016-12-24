@@ -8,11 +8,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.Utils.Constants;
-import com.example.tailoredtech.smartparking.fragments.BookSlotFragment;
+import com.example.tailoredtech.smartparking.fragments.DiscoverFragment;
+import com.example.tailoredtech.smartparking.fragments.FavouritesFragment;
 import com.example.tailoredtech.smartparking.fragments.MoreFragment;
 import com.example.tailoredtech.smartparking.fragments.ProfileFragment;
 import com.roughike.bottombar.BottomBar;
@@ -21,9 +21,10 @@ import com.roughike.bottombar.OnMenuTabClickListener;
 public class HomeActivity extends AppCompatActivity {
 
     private BottomBar bottomBar;
-    private BookSlotFragment bookSlotFragment;
+    private DiscoverFragment discoverFragment;
     private MoreFragment moreFragment;
     private ProfileFragment profileFragment;
+    private FavouritesFragment favouritesFragment;
     private FragmentManager fragmentManager;
 
     @Override
@@ -73,11 +74,11 @@ public class HomeActivity extends AppCompatActivity {
     private Fragment getFragmentFromPosition(int position) {
         Fragment fragment = null;
         switch (position) {
-            case R.id.bottom_menu_click:
+            case R.id.bottom_menu_discover:
                 fragment = initBookSlotFragment();
                 break;
-            case R.id.bottom_menu_mirror:
-                fragment = initMirrorFragment();
+            case R.id.bottom_menu_fav:
+                fragment = initFavFragment();
                 break;
             case R.id.bottom_menu_profile:
                 fragment = initProfileFragment();
@@ -90,17 +91,17 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private Fragment initBookSlotFragment(){
-        if (bookSlotFragment == null) {
-            bookSlotFragment = new BookSlotFragment();
+        if (discoverFragment == null) {
+            discoverFragment = new DiscoverFragment();
         }
-        return bookSlotFragment;
+        return discoverFragment;
     }
 
-    private Fragment initMirrorFragment(){
-        if (bookSlotFragment == null) {
-            bookSlotFragment = new BookSlotFragment();
+    private Fragment initFavFragment(){
+        if (favouritesFragment == null) {
+            favouritesFragment = new FavouritesFragment();
         }
-        return bookSlotFragment;
+        return favouritesFragment;
     }
 
     private Fragment initProfileFragment(){
