@@ -20,6 +20,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyBookin
     private Context mContext;
     private LayoutInflater mInflator;
     private ArrayList<Parking> parkingArrayList;
+    private IBook iBook;
 
     public BookingAdapter(Context mContext) {
         this.mContext = mContext;
@@ -45,6 +46,12 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyBookin
     public class MyBookingViewHolder extends RecyclerView.ViewHolder {
         public MyBookingViewHolder(View itemView) {
             super(itemView);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    iBook.onItemClick(getLayoutPosition());
+                }
+            });
         }
     }
 
@@ -52,5 +59,13 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyBookin
     {
         this.parkingArrayList=parkings;
         notifyDataSetChanged();
+    }
+
+    public interface IBook{
+        void onItemClick(int position);
+    }
+
+    public void setListener(IBook iBook){
+        this.iBook=iBook;
     }
 }
