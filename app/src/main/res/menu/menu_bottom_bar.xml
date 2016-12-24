@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_menu_click"
+        android:icon="@drawable/selector_menu_click"
+        android:title="Book Slot" />
+    <item
+        android:id="@+id/bottom_menu_mirror"
+        android:icon="@drawable/selector_menu_click"
+        android:title="Broadcast Slot" />
+    <item
+        android:id="@+id/bottom_menu_profile"
+        android:icon="@drawable/selector_menu_click"
+        android:title="Profile" />
+    <item
+        android:id="@+id/bottom_menu_more"
+        android:icon="@drawable/selector_menu_click"
+        android:title="More" />
+</menu>

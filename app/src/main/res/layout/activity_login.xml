@@ -33,7 +33,6 @@
             android:layout_weight="1"
             android:background="@drawable/sign_btn_selector"
             android:text="@string/sign_in"
-            android:onClick="signInClick"
             android:textColor="@android:color/white"
             android:textAllCaps="true"/>
 
@@ -47,7 +46,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/facebook_login"
-            android:onClick="fbClick"
             android:background="@drawable/sign_btn_selector"
             android:textColor="@android:color/white"
             android:textAllCaps="true"/>
