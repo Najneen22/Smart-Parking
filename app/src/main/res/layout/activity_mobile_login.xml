@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mobile_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tailoredtech.smartparking.activities.MobileLoginActivity">
+
+    <LinearLayout
+        android:layout_above="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/app_toolbar"/>
+
+        <EditText
+            android:id="@+id/txt_mob_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_mob_no"
+            android:inputType="number"
+            android:layout_margin="20dp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/txt_enter_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="OTP"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sign_btn_selector"
+        android:textColor="@android:color/white"
+        android:onClick="submitClick"
+        android:text="@string/submit"/>
+
+</RelativeLayout>

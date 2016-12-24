@@ -6,22 +6,16 @@ import android.os.Bundle;
 
 import com.example.tailoredtech.smartparking.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class MobileLoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_mobile_login);
     }
 
-    public void signInClick()
-    {
-        startActivity(new Intent(this,MobileLoginActivity.class));
-    }
-
-    public void fbClick()
+    public void submitClick()
     {
         startActivity(new Intent(this,HomeActivity.class));
     }
 }
-
