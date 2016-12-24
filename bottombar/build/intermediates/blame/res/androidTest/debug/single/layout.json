@@ -28,16 +28,16 @@
         "source": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_media_action.xml",
-        "source": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_media_action.xml"
+        "merged": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_template_part_time.xml"
+        "merged": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_activity_chooser_view.xml",
