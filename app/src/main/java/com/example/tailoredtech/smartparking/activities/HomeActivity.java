@@ -46,8 +46,6 @@ public class HomeActivity extends AppCompatActivity {
     private void setToolbar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Discover");
     }
 
