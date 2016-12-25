@@ -10,4 +10,84 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.tailoredtech.smartparking.activities.PaymentActivity">
 
+    <ImageView
+        android:id="@+id/img_tick"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_tick"/>
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_close"/>
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textSize="50dp"
+        android:layout_below="@+id/img_tick"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan this QR code at the parking station"
+        android:layout_below="@+id/done"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/img_qr"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@mipmap/ic_qr"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/desc"/>
+
+    <LinearLayout
+        android:id="@+id/layout_reg"
+        android:layout_below="@+id/img_qr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slot No : "/>
+
+        <TextView
+            android:id="@+id/slot_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/layout_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receipt No : "/>
+
+        <TextView
+            android:id="@+id/receipt_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+
 </RelativeLayout>

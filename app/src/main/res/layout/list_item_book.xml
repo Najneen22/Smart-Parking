@@ -22,7 +22,7 @@
                 android:src="@mipmap/img_park_1"
                 android:scaleType="centerCrop" />
 
-            <FrameLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -34,8 +34,17 @@
                     android:layout_width="match_parent"
                     android:textColor="@color/white"
                     android:text="Amanora Parking"
-                    android:layout_height="wrap_content" />
-            </FrameLayout>
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/img_premium"/>
+
+                <ImageView
+                    android:id="@+id/img_premium"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/premium"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
         </RelativeLayout>
 
         <RelativeLayout
