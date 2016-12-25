@@ -4,12 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
+    android:padding="10dp"
     tools:context="com.example.tailoredtech.smartparking.fragments.ProfileFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:textSize="16dp"
         android:textColor="@android:color/black"
         android:padding="10dp"
         android:text="Account"/>
@@ -19,6 +21,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/add_free_slot"
         android:clickable="true"
+        android:textSize="16dp"
         android:textColor="@android:color/black"
         android:padding="10dp"
         android:text="Add Free Slot"/>
@@ -27,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:textSize="16dp"
         android:textColor="@android:color/black"
         android:padding="10dp"
         android:text="Booking History"/>
@@ -35,6 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:textSize="16dp"
         android:textColor="@android:color/black"
         android:padding="10dp"
         android:text="Saved Cards"/>
