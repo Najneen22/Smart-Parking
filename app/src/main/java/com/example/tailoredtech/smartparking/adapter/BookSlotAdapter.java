@@ -7,10 +7,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.activities.PaymentActivity;
+import com.example.tailoredtech.smartparking.widget.AppButton;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -67,10 +67,10 @@ public class BookSlotAdapter extends RecyclerView.Adapter<BookSlotAdapter.MyBook
     }
 
     class MyBookSlotHolder extends RecyclerView.ViewHolder {
-        private Button btnSlot;
+        private AppButton btnSlot;
         public MyBookSlotHolder(View itemView) {
             super(itemView);
-            btnSlot = (Button) itemView.findViewById(R.id.btn_slot);
+            btnSlot = (AppButton) itemView.findViewById(R.id.btn_slot);
             btnSlot.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
