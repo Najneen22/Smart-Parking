@@ -14,8 +14,6 @@ import com.example.tailoredtech.smartparking.Utils.Utils;
 
 public class PostSlotActivity extends AppCompatActivity {
 
-    private boolean isIdentityProofEntered = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

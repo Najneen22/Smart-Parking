@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.tailoredtech.smartparking.R;
+import com.example.tailoredtech.smartparking.TabBarCommunicator;
+import com.example.tailoredtech.smartparking.activities.HomeActivity;
 import com.example.tailoredtech.smartparking.activities.SelectBookingArea;
 import com.example.tailoredtech.smartparking.adapter.BookingAdapter;
 
@@ -54,5 +56,18 @@ public class DiscoverFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        setUpActionBar();
+    }
+
+    public void setUpActionBar() {
+        ((HomeActivity) getActivity()).setActionBarTitle("Discover");
+        if (getActivity() instanceof TabBarCommunicator) {
+            ((TabBarCommunicator) getActivity()).fragmentAttached(TabBarCommunicator.TabPage.ProfilePage);
+        }
     }
 }
