@@ -2,41 +2,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context="com.example.tailoredtech.smartparking.fragments.ProfileFragment">
 
-    <TextView
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:textColor="@android:color/black"
+        android:background="@drawable/draw_scroll_top_grey"
+        android:gravity="left|center"
         android:padding="10dp"
-        android:text="Account"/>
+        android:text="Account"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <Button
         android:id="@+id/add_free_slot"
-        android:clickable="true"
-        android:textColor="@android:color/black"
-        android:padding="10dp"
-        android:text="Add Free Slot"/>
-
-    <TextView
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/draw_scroll_top_grey"
         android:clickable="true"
-        android:textColor="@android:color/black"
+        android:gravity="left|center"
         android:padding="10dp"
-        android:text="Booking History"/>
+        android:text="Add Free Slot"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
 
-    <TextView
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/draw_scroll_top_grey"
         android:clickable="true"
-        android:textColor="@android:color/black"
+        android:gravity="left|center"
         android:padding="10dp"
-        android:text="Saved Cards"/>
+        android:text="Booking History"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/draw_scroll_top_grey"
+        android:clickable="true"
+        android:gravity="left|center"
+        android:padding="10dp"
+        android:text="Saved Cards"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
 
 </LinearLayout>
