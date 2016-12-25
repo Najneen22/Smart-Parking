@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tailoredtech.smartparking.activities.UserDetailsActivity">
+
+    <include layout="@layout/app_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_toolbar"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <com.example.tailoredtech.smartparking.widget.AppEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="3dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:textSize="14dp"
+            android:hint="Full Name"
+            android:id="@+id/user_name"/>
+
+        <com.example.tailoredtech.smartparking.widget.AppEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="3dp"
+            android:textSize="14dp"
+            android:hint="Vehicle Number"
+            android:id="@+id/vehicle_number"/>
+
+        <com.example.tailoredtech.smartparking.widget.AppEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="3dp"
+            android:textSize="14dp"
+            android:hint="Driving License Number"
+            android:id="@+id/license_number"/>
+    </LinearLayout>
+    <com.example.tailoredtech.smartparking.widget.AppButton
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:onClick="submitDetails"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/sign_btn_selector"
+        android:textColor="@android:color/white"
+        android:id="@+id/submit"/>
+
+</RelativeLayout>

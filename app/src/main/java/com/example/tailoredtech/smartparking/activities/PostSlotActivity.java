@@ -5,9 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 
 import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.Utils.Utils;
@@ -30,6 +28,11 @@ public class PostSlotActivity extends AppCompatActivity {
         AppTextView userName = (AppTextView) findViewById(R.id.txt_user_name);
         AppEditText edMessage = (AppEditText) findViewById(R.id.ed_message);
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioVehicle);
+
+        /*if(User.getUsers()!=null && User.getUsers().size() > 0) {
+            User user = User.getUsers().get(0);
+            userName.setText(user.getUserName());
+        }*/
 
         final AppTextView parkingFare = (AppTextView) findViewById(R.id.txt_parking_fare);
 

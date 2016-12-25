@@ -18,11 +18,10 @@ public class SplashActivity extends AppCompatActivity {
 
         startActivity(new Intent(SplashActivity.this, LoginActivity.class));
 
-        /*if(Utils.isInternetConnected(this)) {
+        if(Utils.isInternetConnected(this)) {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                *//* Create an Intent that will start the Menu-Activity. *//*
                     startActivity(new Intent(SplashActivity.this, LoginActivity.class));
                     Intent mainIntent = new Intent(SplashActivity.this, HomeActivity.class);
                     startActivity(mainIntent);
@@ -32,6 +31,6 @@ public class SplashActivity extends AppCompatActivity {
         }
         else {
             Toast.makeText(this, getString(R.string.no_internet_msg),Toast.LENGTH_SHORT).show();
-        }*/
+        }
     }
 }
