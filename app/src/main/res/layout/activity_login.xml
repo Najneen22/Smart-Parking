@@ -32,7 +32,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="bottom"
-        android:padding="10dp"
         android:weightSum="2"
         android:layout_alignParentBottom="true">
 
@@ -48,8 +47,9 @@
             android:textAllCaps="true"/>
 
         <View
-            android:layout_width="10dp"
-            android:layout_height="match_parent"/>
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"/>
 
         <com.example.tailoredtech.smartparking.widget.AppButton
             android:id="@+id/btn_fb_login"
