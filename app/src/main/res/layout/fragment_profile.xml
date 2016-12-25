@@ -12,10 +12,16 @@
         android:layout_height="wrap_content"
         android:background="@drawable/draw_scroll_top_grey"
         android:gravity="left|center"
+        android:clickable="true"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
         android:padding="10dp"
         android:text="Account"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black" />
+        android:textAllCaps="false"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
     <Button
         android:id="@+id/add_free_slot"
@@ -25,10 +31,16 @@
         android:background="@drawable/draw_scroll_top_grey"
         android:clickable="true"
         android:gravity="left|center"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
         android:padding="10dp"
         android:text="Add Free Slot"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black" />
+        android:textAllCaps="false"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
     <Button
         style="@style/Base.Widget.AppCompat.Button.Borderless"
@@ -37,10 +49,16 @@
         android:background="@drawable/draw_scroll_top_grey"
         android:clickable="true"
         android:gravity="left|center"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
         android:padding="10dp"
         android:text="Booking History"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black" />
+        android:textAllCaps="false"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
 
     <Button
         style="@style/Base.Widget.AppCompat.Button.Borderless"
@@ -49,9 +67,15 @@
         android:background="@drawable/draw_scroll_top_grey"
         android:clickable="true"
         android:gravity="left|center"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
         android:padding="10dp"
         android:text="Saved Cards"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black" />
+        android:textAllCaps="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
 </LinearLayout>
