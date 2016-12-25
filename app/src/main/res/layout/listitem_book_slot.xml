@@ -4,7 +4,7 @@
     android:padding="5dp"
     android:layout_height="wrap_content">
 
-    <Button
+    <com.example.tailoredtech.smartparking.widget.AppButton
         android:id="@+id/btn_slot"
         android:layout_width="40dp"
         android:layout_height="60dp" />
