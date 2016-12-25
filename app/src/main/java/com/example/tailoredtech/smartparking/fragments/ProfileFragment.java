@@ -6,12 +6,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.TabBarCommunicator;
 import com.example.tailoredtech.smartparking.activities.HomeActivity;
 import com.example.tailoredtech.smartparking.activities.PostSlotActivity;
+import com.example.tailoredtech.smartparking.widget.AppButton;
 
 public class ProfileFragment extends Fragment {
 
@@ -38,7 +38,7 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
-        TextView textView = (TextView) view.findViewById(R.id.add_free_slot);
+        AppButton textView = (AppButton) view.findViewById(R.id.add_free_slot);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
