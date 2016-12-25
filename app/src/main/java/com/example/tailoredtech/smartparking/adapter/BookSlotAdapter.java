@@ -79,7 +79,7 @@ public class BookSlotAdapter extends RecyclerView.Adapter<BookSlotAdapter.MyBook
                     if(!reservedSlots.contains(pos)|| bookedSlots.contains(pos))
                     {
                         Intent intent=new Intent(mContext, PaymentActivity.class);
-                        intent.putExtra("Pos",pos);
+                        intent.putExtra("pos",pos);
                         mContext.startActivity(intent);
                     }
                     notifyDataSetChanged();
