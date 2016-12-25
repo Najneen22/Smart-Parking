@@ -14,11 +14,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.tailoredtech.smartparking.R;
+import com.example.tailoredtech.smartparking.widget.AppButton;
 import com.viewpagerindicator.CirclePageIndicator;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btnSignIn, btnFbLogin;
+    AppButton btnSignIn, btnFbLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +31,8 @@ public class LoginActivity extends AppCompatActivity {
         mViewPager.setAdapter(new ScreenSlidePagerAdapter(this));
         mPageIndicator.setViewPager(mViewPager);
 
-        btnSignIn= (Button) findViewById(R.id.btn_sign_in);
-        btnFbLogin= (Button) findViewById(R.id.btn_fb_login);
+        btnSignIn= (AppButton) findViewById(R.id.btn_sign_in);
+        btnFbLogin= (AppButton) findViewById(R.id.btn_fb_login);
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
 
             ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
             imageView.setImageResource(mResources[position]);
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+//            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
             container.addView(itemView);
 

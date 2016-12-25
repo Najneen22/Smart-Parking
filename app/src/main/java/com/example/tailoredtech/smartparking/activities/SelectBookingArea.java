@@ -8,20 +8,21 @@ import android.widget.TextView;
 import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.Utils.DepthPageTransformer;
 import com.example.tailoredtech.smartparking.adapter.BookAreaPagerAdapter;
+import com.example.tailoredtech.smartparking.widget.AppTextView;
 
 public class SelectBookingArea extends AppCompatActivity {
 
     private ViewPager pager;
     private BookAreaPagerAdapter bookAreaPagerAdapter;
-    private TextView txtTotalFloors,txtCurrentFloor;
+    private AppTextView txtTotalFloors,txtCurrentFloor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_booking_area);
         pager= (ViewPager) findViewById(R.id.viewpager_booking_areas);
-        txtTotalFloors= (TextView) findViewById(R.id.txt_total_floors);
-        txtCurrentFloor= (TextView) findViewById(R.id.txt_current_floor);
+        txtTotalFloors= (AppTextView) findViewById(R.id.txt_total_floors);
+        txtCurrentFloor= (AppTextView) findViewById(R.id.txt_current_floor);
         bookAreaPagerAdapter=new BookAreaPagerAdapter(getSupportFragmentManager());
         pager.setAdapter(bookAreaPagerAdapter);
         pager.setPageTransformer(true,new DepthPageTransformer());

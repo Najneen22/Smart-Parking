@@ -29,7 +29,7 @@
                 android:background="#80000000"
                 android:padding="10dp">
 
-                <TextView
+                <com.example.tailoredtech.smartparking.widget.AppTextView
                     android:id="@+id/txt_p_name"
                     android:layout_width="match_parent"
                     android:textColor="@color/white"
@@ -53,13 +53,13 @@
                     android:layout_height="30dp"
                     android:src="@mipmap/ic_bike"/>
 
-                <TextView
+                <com.example.tailoredtech.smartparking.widget.AppTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:text=":"/>
 
-                <TextView
+                <com.example.tailoredtech.smartparking.widget.AppTextView
                     android:id="@+id/txt_fare_bike"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -71,20 +71,20 @@
                     android:layout_height="30dp"
                     android:src="@mipmap/ic_car"/>
 
-                <TextView
+                <com.example.tailoredtech.smartparking.widget.AppTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:text=":"/>
 
-                <TextView
+                <com.example.tailoredtech.smartparking.widget.AppTextView
                     android:id="@+id/txt_fare_car"
                     android:layout_width="wrap_content"
                     android:layout_marginRight="15dp"
                     android:layout_gravity="center_vertical"
                     android:layout_height="wrap_content" />
 
-                <TextView
+                <com.example.tailoredtech.smartparking.widget.AppTextView
                     android:id="@+id/txt_rental_type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
 
             </LinearLayout>
 
-            <TextView
+            <com.example.tailoredtech.smartparking.widget.AppTextView
                 android:id="@+id/txt_fare"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
