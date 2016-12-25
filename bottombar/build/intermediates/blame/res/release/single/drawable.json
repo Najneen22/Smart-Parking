@@ -4,6 +4,13 @@
         "source": "C:\\StudioProjects\\SmartParking\\bottombar\\src\\main\\res\\drawable\\bb_bottom_bar_top_shadow.xml"
     },
     {
+<<<<<<< HEAD
+=======
+        "merged": "D:\\Smart-Parking\\bottombar\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_material.xml",
+        "source": "D:\\Smart-Parking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+>>>>>>> 0557bae2612693d3e618c0895c51387e05dbeb26
         "merged": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\StudioProjects\\SmartParking\\bottombar\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },

@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.tailoredtech.smartparking.R;
+import com.example.tailoredtech.smartparking.activities.PaymentActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -77,7 +78,7 @@ public class BookSlotAdapter extends RecyclerView.Adapter<BookSlotAdapter.MyBook
                     selectedSlot=pos;
                     if(!reservedSlots.contains(pos)|| bookedSlots.contains(pos))
                     {
-                        Intent intent=new Intent();
+                        Intent intent=new Intent(mContext, PaymentActivity.class);
                         intent.putExtra("Pos",pos);
                         mContext.startActivity(intent);
                     }
