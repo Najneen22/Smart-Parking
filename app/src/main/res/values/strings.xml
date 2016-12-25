@@ -12,4 +12,7 @@
     <string name="booked">Booked</string>
     <string name="avail">Available</string>
     <string name="reserved">Reserved</string>
+    <string name="Rs">\u20B9</string>
+
+    <string name="price">\u20B9  %1$d</string>
 </resources>
