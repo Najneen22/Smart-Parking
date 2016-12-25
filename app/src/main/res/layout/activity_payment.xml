@@ -15,7 +15,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_centerHorizontal="true"
-        android:src="@mipmap/tick"/>
+        android:src="@mipmap/ic_tick"/>
 
     <ImageView
         android:id="@+id/img_close"

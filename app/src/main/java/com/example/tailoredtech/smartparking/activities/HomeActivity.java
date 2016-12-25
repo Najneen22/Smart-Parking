@@ -10,7 +10,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.Utils.Constants;
@@ -29,7 +28,6 @@ public class HomeActivity extends AppCompatActivity {
     private ProfileFragment profileFragment;
     private FavouritesFragment favouritesFragment;
     private FragmentManager fragmentManager;
-    private TextView toolBarTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
