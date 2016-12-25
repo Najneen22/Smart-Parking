@@ -112,9 +112,6 @@ public class HomeActivity extends AppCompatActivity {
             case R.id.bottom_menu_profile:
                 fragment = initProfileFragment();
                 break;
-            case R.id.bottom_menu_more:
-                fragment = initMoreFragment();
-                break;
         }
         return fragment;
     }

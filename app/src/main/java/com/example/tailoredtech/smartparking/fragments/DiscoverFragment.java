@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.TabBarCommunicator;
 import com.example.tailoredtech.smartparking.activities.HomeActivity;
+import com.example.tailoredtech.smartparking.activities.PaymentActivity;
 import com.example.tailoredtech.smartparking.activities.SelectBookingArea;
 import com.example.tailoredtech.smartparking.adapter.BookingAdapter;
 import com.example.tailoredtech.smartparking.models.Parking;
@@ -74,11 +75,13 @@ public class DiscoverFragment extends Fragment {
         parkingListView.setLayoutManager(new LinearLayoutManager(getActivity()));
         bookingAdapter.setListener(new BookingAdapter.IBook() {
             @Override
-            public void onItemClick(int position) {
-                if (position % 2 == 0) {
+            public void onItemClick(int position, Parking parking) {
+                if(parking.getIsPremium())
+                {
                     startActivity(new Intent(getActivity(), SelectBookingArea.class));
-                } else {
-                    startActivity(new Intent(getActivity(), SelectBookingArea.class));
+                }
+                else {
+                    startActivity(new Intent(getActivity(), PaymentActivity.class));
                 }
             }
         });

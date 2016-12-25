@@ -3,6 +3,8 @@ package com.example.tailoredtech.smartparking.activities;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.tailoredtech.smartparking.R;
@@ -15,11 +17,15 @@ public class SelectBookingArea extends AppCompatActivity {
     private ViewPager pager;
     private BookAreaPagerAdapter bookAreaPagerAdapter;
     private AppTextView txtTotalFloors,txtCurrentFloor;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_booking_area);
+        toolbar= (Toolbar) findViewById(R.id.app_toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Pick your spot");
         pager= (ViewPager) findViewById(R.id.viewpager_booking_areas);
         txtTotalFloors= (AppTextView) findViewById(R.id.txt_total_floors);
         txtCurrentFloor= (AppTextView) findViewById(R.id.txt_current_floor);
@@ -44,5 +50,14 @@ public class SelectBookingArea extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()==android.R.id.home)
+        {
+            onBackPressed();
+        }
+        return true;
     }
 }

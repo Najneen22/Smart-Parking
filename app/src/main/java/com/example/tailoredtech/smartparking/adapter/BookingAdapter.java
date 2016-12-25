@@ -86,7 +86,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyBookin
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    iBook.onItemClick(getLayoutPosition());
+                    iBook.onItemClick(getLayoutPosition(),parkingArrayList.get(getLayoutPosition()));
                 }
             });
         }
@@ -98,7 +98,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyBookin
     }
 
     public interface IBook {
-        void onItemClick(int position);
+        void onItemClick(int position,Parking parking);
     }
 
     public void setListener(IBook iBook) {

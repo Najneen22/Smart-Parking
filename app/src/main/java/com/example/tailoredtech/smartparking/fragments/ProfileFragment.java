@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.TabBarCommunicator;
 import com.example.tailoredtech.smartparking.activities.HomeActivity;
+import com.example.tailoredtech.smartparking.activities.LoginActivity;
 import com.example.tailoredtech.smartparking.activities.PostSlotActivity;
 import com.example.tailoredtech.smartparking.widget.AppButton;
 
@@ -43,6 +44,16 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), PostSlotActivity.class));
+            }
+        });
+
+        AppButton logout = (AppButton) view.findViewById(R.id.btn_logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(), LoginActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
             }
         });
         return view;

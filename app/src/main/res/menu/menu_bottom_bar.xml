@@ -13,8 +13,4 @@
         android:id="@+id/bottom_menu_profile"
         android:icon="@drawable/selector_menu_click"
         android:title="Profile" />
-    <item
-        android:id="@+id/bottom_menu_more"
-        android:icon="@drawable/selector_menu_click"
-        android:title="More" />
 </menu>
