@@ -14,6 +14,13 @@ import com.example.tailoredtech.smartparking.TabBarCommunicator;
 import com.example.tailoredtech.smartparking.activities.HomeActivity;
 import com.example.tailoredtech.smartparking.activities.SelectBookingArea;
 import com.example.tailoredtech.smartparking.adapter.BookingAdapter;
+import com.example.tailoredtech.smartparking.models.Parking;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 public class DiscoverFragment extends Fragment {
 
@@ -21,6 +28,26 @@ public class DiscoverFragment extends Fragment {
 
     private RecyclerView parkingListView;
     private BookingAdapter bookingAdapter;
+    private String parkingStringJson="[{\n" +
+            "\t\"pid\":\"1\",\n" +
+            "\t\"pname\":\"Amanora Parking\",\n" +
+            "\t\"PImg\":\"https://i.ytimg.com/vi/NIl02Ddcwyc/maxresdefault.jpg\",\n" +
+            "\t\"isPremium\":\"true\",\n" +
+            "\t\"bikefare\":\"20\",\n" +
+            "\t\"carfare\":\"150\",\n" +
+            "\t\"mode\":\"Day Basis\",\n" +
+            "\t\"isavail\":\"true\"\n" +
+            "},\n" +
+            "{\n" +
+            "\t\"pid\":2,\n" +
+            "\t\"pname\":\"Seasons Parking\",\n" +
+            "\t\"PImg\":\"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmHK5Rn3oaZJ8Mv4M3epsSRnU8VkjQvWefuxDH3RAv71-RNMzO\",\n" +
+            "\t\"isPremium\":\"false\",\n" +
+            "\t\"bikefare\":\"15\",\n" +
+            "\t\"carfare\":\"100\",\n" +
+            "\t\"mode\":\"Hour Basis\",\n" +
+            "\t\"isavail\":\"false\"\n" +
+            "}]";
 
     public static DiscoverFragment newInstance(String param1, String param2) {
         DiscoverFragment fragment = new DiscoverFragment();
@@ -55,6 +82,18 @@ public class DiscoverFragment extends Fragment {
                 }
             }
         });
+
+        JSONArray parkingArray=null;
+
+        try {
+            parkingArray=new JSONArray(parkingStringJson);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        ArrayList<Parking> parking=getParkingList(parkingArray);
+        bookingAdapter.updateList(parking);
+
         return view;
     }
 
@@ -69,5 +108,18 @@ public class DiscoverFragment extends Fragment {
         if (getActivity() instanceof TabBarCommunicator) {
             ((TabBarCommunicator) getActivity()).fragmentAttached(TabBarCommunicator.TabPage.ProfilePage);
         }
+    }
+
+    private ArrayList<Parking> getParkingList(JSONArray news) {
+        ArrayList<Parking> parkingList=new ArrayList<>();
+        for(int i = 0; i < news.length(); i++)
+        {
+            JSONObject newsObj = news.optJSONObject(i);
+            if(newsObj!=null)
+            {
+                parkingList.add(Parking.initialiseFromJSON(newsObj));
+            }
+        }
+        return parkingList;
     }
 }

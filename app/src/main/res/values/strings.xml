@@ -14,5 +14,5 @@
     <string name="reserved">Reserved</string>
     <string name="Rs">\u20B9</string>
 
-    <string name="price">\u20B9  %1$d</string>
+    <string name="price">\u20B9  %1$s</string>
 </resources>

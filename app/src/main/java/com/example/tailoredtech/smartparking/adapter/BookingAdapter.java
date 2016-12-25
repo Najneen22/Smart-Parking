@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.models.Parking;
 import com.example.tailoredtech.smartparking.widget.AppTextView;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -28,6 +29,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyBookin
     public BookingAdapter(Context mContext) {
         this.mContext = mContext;
         this.mInflator = LayoutInflater.from(mContext);
+        this.parkingArrayList=new ArrayList<>();
     }
 
     @Override
@@ -38,33 +40,49 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyBookin
 
     @Override
     public void onBindViewHolder(MyBookingViewHolder holder, int position) {
-        if(position%2==0)
+        Parking parking=parkingArrayList.get(position);
+        if(!parking.getIsavail())
         {
-            holder.imgArrow.setBackgroundColor(ContextCompat.getColor(mContext,R.color.colorPrimary));
+            holder.imgArrow.setBackgroundColor(ContextCompat.getColor(mContext,R.color.red));
         }
         else
         {
             holder.imgArrow.setBackgroundColor(ContextCompat.getColor(mContext,R.color.colorPrimaryDark));
         }
-        holder.txtCarFare.setText(mContext.getString(R.string.price, 25));
-        holder.txtBikeFare.setText(mContext.getString(R.string.price, 10));
+        holder.txtCarFare.setText(mContext.getString(R.string.price, parking.getCarfare()));
+        holder.txtBikeFare.setText(mContext.getString(R.string.price, parking.getBikefare()));
+        Picasso.with(mContext).load(parking.getPImg()).into(holder.imgParking);
+        holder.txtParkingName.setText(parking.getPname());
+        holder.txtMode.setText(parking.getMode());
+        if(parking.getIsPremium())
+        {
+            holder.imgPremium.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            holder.imgPremium.setVisibility(View.GONE);
+        }
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        return parkingArrayList.size();
     }
 
     public class MyBookingViewHolder extends RecyclerView.ViewHolder {
 
-        AppTextView txtCarFare, txtBikeFare;
-        ImageView imgArrow;
+        AppTextView txtCarFare, txtBikeFare, txtParkingName, txtMode;
+        ImageView imgArrow,imgParking,imgPremium;
 
         public MyBookingViewHolder(View itemView) {
             super(itemView);
+            imgPremium= (ImageView) itemView.findViewById(R.id.img_premium);
             txtCarFare= (AppTextView) itemView.findViewById(R.id.txt_fare_car);
             txtBikeFare= (AppTextView) itemView.findViewById(R.id.txt_fare_bike);
             imgArrow= (ImageView) itemView.findViewById(R.id.img_proceed);
+            txtParkingName= (AppTextView) itemView.findViewById(R.id.txt_p_name);
+            txtMode= (AppTextView) itemView.findViewById(R.id.txt_rental_type);
+            imgParking= (ImageView) itemView.findViewById(R.id.img_parking);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
