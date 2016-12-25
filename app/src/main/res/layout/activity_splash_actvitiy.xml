@@ -6,9 +6,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.tailoredtech.smartparking.activities.SplashActivity">
 
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Splash"/>
+        android:layout_height="match_parent"
+        android:src="@mipmap/splash"
+        android:scaleType="centerCrop"/>
 
 </RelativeLayout>

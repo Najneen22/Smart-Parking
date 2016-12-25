@@ -9,4 +9,5 @@
     <color name="booked">#08c7f7</color>
     <color name="reserved">#96c0bc</color>
     <color name="selected">#1cd4bd</color>
+    <color name="red">#a95352</color>
 </resources>
