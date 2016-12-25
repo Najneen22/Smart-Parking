@@ -24,6 +24,7 @@ public class SelectBookingArea extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_booking_area);
         toolbar= (Toolbar) findViewById(R.id.app_toolbar);
+        setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Pick your spot");
         pager= (ViewPager) findViewById(R.id.viewpager_booking_areas);

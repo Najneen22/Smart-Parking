@@ -20,6 +20,7 @@ public class SplashActivity extends AppCompatActivity {
                 Intent intent=new Intent(SplashActivity.this, LoginActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+                finish();
             }
         }, 2000);
     }

@@ -27,13 +27,19 @@
         <activity android:name=".activities.MobileLoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".activities.PostSlotActivity"
+        <activity
+            android:name=".activities.PostSlotActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden"/>
-        <activity android:name=".activities.SelectBookingArea"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".activities.PaymentActivity"
-            android:screenOrientation="portrait"/>
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.SelectBookingArea"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.UserDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
     </application>
 
 </manifest>
