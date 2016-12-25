@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.tailoredtech.smartparking.R;
+import com.example.tailoredtech.smartparking.TabBarCommunicator;
+import com.example.tailoredtech.smartparking.activities.HomeActivity;
 import com.example.tailoredtech.smartparking.activities.PostSlotActivity;
 
 public class ProfileFragment extends Fragment {
@@ -44,5 +46,18 @@ public class ProfileFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        setUpActionBar();
+    }
+
+    public void setUpActionBar() {
+        ((HomeActivity) getActivity()).setActionBarTitle("Profile");
+        if (getActivity() instanceof TabBarCommunicator) {
+            ((TabBarCommunicator) getActivity()).fragmentAttached(TabBarCommunicator.TabPage.ProfilePage);
+        }
     }
 }

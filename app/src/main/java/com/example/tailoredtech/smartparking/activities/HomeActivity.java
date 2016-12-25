@@ -8,6 +8,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.Utils.Constants;
@@ -26,13 +29,43 @@ public class HomeActivity extends AppCompatActivity {
     private ProfileFragment profileFragment;
     private FavouritesFragment favouritesFragment;
     private FragmentManager fragmentManager;
+    private TextView toolBarTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        setToolbar();
         fragmentManager = getSupportFragmentManager();
         setBottomBar(savedInstanceState);
+
+        initDiscoverFragment();
+        initFavFragment();
+        initProfileFragment();
+        initMoreFragment();
+    }
+
+    private void setToolbar(){
+        Toolbar toolbar = (Toolbar) findViewById(R.id.app_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Discover");
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (bottomBar.getCurrentTabPosition() == 0) {
+            finish();
+        } else {
+            bottomBar.selectTabAtPosition(0, true);
+        }
     }
 
     private void setBottomBar(Bundle savedInstanceState) {
@@ -75,7 +108,7 @@ public class HomeActivity extends AppCompatActivity {
         Fragment fragment = null;
         switch (position) {
             case R.id.bottom_menu_discover:
-                fragment = initBookSlotFragment();
+                fragment = initDiscoverFragment();
                 break;
             case R.id.bottom_menu_fav:
                 fragment = initFavFragment();
@@ -90,7 +123,7 @@ public class HomeActivity extends AppCompatActivity {
         return fragment;
     }
 
-    private Fragment initBookSlotFragment(){
+    private Fragment initDiscoverFragment(){
         if (discoverFragment == null) {
             discoverFragment = new DiscoverFragment();
         }
@@ -116,5 +149,9 @@ public class HomeActivity extends AppCompatActivity {
             moreFragment = new MoreFragment();
         }
         return moreFragment;
+    }
+
+    public void setActionBarTitle(String title) {
+        getSupportActionBar().setTitle(title);
     }
 }
