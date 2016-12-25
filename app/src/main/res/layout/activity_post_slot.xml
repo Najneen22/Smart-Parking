@@ -31,14 +31,14 @@
                 android:layout_margin="10dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <com.example.tailoredtech.smartparking.widget.AppTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
                     android:text="User: " />
 
-                <TextView
+                <com.example.tailoredtech.smartparking.widget.AppTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/txt_user_name"
@@ -47,7 +47,7 @@
                     android:text="Najneen Momin" />
             </LinearLayout>
 
-            <EditText
+            <com.example.tailoredtech.smartparking.widget.AppEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -55,7 +55,7 @@
                 android:id="@+id/ed_place"
                 android:hint="Enter your location"/>
 
-            <EditText
+            <com.example.tailoredtech.smartparking.widget.AppEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -74,7 +74,7 @@
                     android:src="@drawable/parking_slot"
                     android:layout_marginRight="20dp"/>
 
-                <Button
+                <com.example.tailoredtech.smartparking.widget.AppButton
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="Upload Photo"
@@ -127,14 +127,14 @@
                 android:layout_margin="10dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <com.example.tailoredtech.smartparking.widget.AppTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
                     android:text="Parking Fare: " />
 
-                <TextView
+                <com.example.tailoredtech.smartparking.widget.AppTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
@@ -154,7 +154,7 @@
                     android:src="@drawable/aadhar_card"
                     android:layout_marginRight="20dp"/>
 
-                <Button
+                <com.example.tailoredtech.smartparking.widget.AppButton
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="Upload Identity"
@@ -175,7 +175,7 @@
         </LinearLayout>
     </LinearLayout>
     </ScrollView>
-    <Button
+    <com.example.tailoredtech.smartparking.widget.AppButton
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_alignParentBottom="true"

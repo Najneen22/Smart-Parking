@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import com.example.tailoredtech.smartparking.R;
 import com.example.tailoredtech.smartparking.Utils.Utils;
+import com.example.tailoredtech.smartparking.widget.AppEditText;
+import com.example.tailoredtech.smartparking.widget.AppTextView;
 
 public class PostSlotActivity extends AppCompatActivity {
 
@@ -25,11 +27,11 @@ public class PostSlotActivity extends AppCompatActivity {
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Post a Slot");
 
-        TextView userName = (TextView) findViewById(R.id.txt_user_name);
-        EditText edMessage = (EditText) findViewById(R.id.ed_message);
+        AppTextView userName = (AppTextView) findViewById(R.id.txt_user_name);
+        AppEditText edMessage = (AppEditText) findViewById(R.id.ed_message);
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioVehicle);
 
-        final TextView parkingFare = (TextView) findViewById(R.id.txt_parking_fare);
+        final AppTextView parkingFare = (AppTextView) findViewById(R.id.txt_parking_fare);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
